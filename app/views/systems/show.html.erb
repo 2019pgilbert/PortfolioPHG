@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @system.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @system.subtitle %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @system.text %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @system.body %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @system.image %>
+</p>
+
+<%= link_to 'Edit', edit_system_path(@system) %> |
+<%= link_to 'Back', systems_path %>

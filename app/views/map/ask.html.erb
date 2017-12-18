@@ -1,0 +1,21 @@
+<h1>Map#ask</h1>
+<p>Find me in app/views/map/ask.html.erb</p>
+
+<center> 
+	<!Sets up form> 
+<%= form_tag show_path, method: "get", html: { class: "form" } do %>
+
+	<div class="form_group col-sm-6 col-md-offset-3"> 
+		<%= text_field_tag(:place, "", placeholder: "Enter Neighborhood", class: "form-control") %> 
+	</div>
+
+	<div class="form_group col-sm-6 col-md-offset-3">
+		<%= text_field_tag(:food, "", placeholder: "Enter Food", class: "form-control") %> 
+	</div>
+	<center>
+		<div class="form_group text-center">
+			<%=submit_tag "Search", class: " gmaps-btn btn 
+				btn-outline-info text-align: center;" %> 
+				<% end %> 
+		</div>
+	</center>
